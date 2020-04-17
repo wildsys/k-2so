@@ -15,11 +15,13 @@ To use this tool, you MUST have:
 ```
 git clone git@gitlab.com:dumont.jul/k-2so.git /root/ssl
 ```
-1. Install Python 3 packages:
+2. Install Python 3 packages:
 ```
 python3 -m pip install -r requirements.txt -U
 ```
-1. Create your wildcard certificate:
+3. Create an [API token from OVH](https://eu.api.ovh.com/createToken/)
+4. Update _config.ini_ with the information
+5. Create your wildcard certificate:
 ```
 /root/ssl/renew.sh -d *.<domain>
 ```
