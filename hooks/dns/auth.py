@@ -9,7 +9,7 @@ import configparser
 
 # Load configuration
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read('/root/ssl/config.ini')
 
 # Instance
 hook = K2SODNSHook(
@@ -34,4 +34,3 @@ while not is_challenge_success and retry < 10:
 
 # Exit code
 sys.exit(0 if is_challenge_success else 1)
-

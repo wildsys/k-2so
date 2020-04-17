@@ -9,7 +9,7 @@ import configparser
 
 # Load configuration
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read('/root/ssl/config.ini')
 
 # Instance
 hook = K2SODNSHook(
@@ -22,4 +22,3 @@ hook = K2SODNSHook(
 # Check if challenge is still existing
 if hook.is_challenge_exists():
     hook.remove_challenge()
-
