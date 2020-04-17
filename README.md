@@ -18,6 +18,7 @@ tar -xvvzf k-2so-master.tar.gz
 ```
 2. Install Python 3 packages:
 ```
+cd k-2so-master
 python3 -m pip install -r requirements.txt -U
 ```
 3. Create an [API token from OVH](https://eu.api.ovh.com/createToken/)
