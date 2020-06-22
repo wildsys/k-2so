@@ -23,7 +23,12 @@ mv k-2so-master /root/ssl
 cd /root/ssl
 python3 -m pip install -r requirements.txt -U
 ```
-3. Create an [API token from OVH](https://eu.api.ovh.com/createToken/)
+3. Create an [API token from OVH](https://eu.api.ovh.com/createToken/), with permissions:
+```
+POST /domain/zone/*
+GET /domain/zone/*
+DELETE /domain/zone/*
+```
 4. Update _config.ini_ with the information
 5. Create your wildcard certificate (you can add multiple domains - e.g.: `-d <domain1>,*.<domain1>,*.<domain2>`):
 ```
